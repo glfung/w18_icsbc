@@ -4,3 +4,7 @@
 
 
 ### Your Code Here ###
+puts 'What do you want?!'.upcase
+response = gets.chomp
+puts (response).upcase + '?!'
+puts 'That\'s too much to ask for! You\'re fired!'.upcase
