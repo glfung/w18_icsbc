@@ -2,8 +2,17 @@
 
 ### Get input from user: ###
 print("Please enter a starting year: ")
-starting = gets.chomp ## FIXME?
+starting = gets.to_i ## FIXME?
 print("Now enter a ending year: ")
-ending = gets.chomp ## FIXME?
+ending = gets.to_i ## FIXME?
 
 ### Rest of your code here ###
+while (starting <= ending)
+  if starting % 400 == 0
+    puts starting
+  elsif starting % 100 == 0
+  elsif starting % 4 == 0
+    puts starting
+  end
+  starting = starting + 1
+end
